@@ -1,0 +1,200 @@
+/*font-family: 'Lato', sans-serif;
+font-family: 'Ropa Sans', sans-serif;
+font-family: 'Quicksand', sans-serif;
+colores: negro = #000000;  gris = #F2F2F2; rojo = #DF0101;*/
+
+/*Formato general del body*/
+body {
+	background-color: #000000;
+	font-family: 'Ropa Sans', sans-serif;
+	color: #FFFFFF;
+}
+body .img { /*para todas las imágenes*/
+	background-color: #FFFFFF;
+}
+/*Formato general del header*/
+header { /*color del header*/
+	background-color: #DF0101;
+}
+header div a .img-logo {/*imagenes del header*/
+	margin: 1em;
+	max-width: 12.5%
+}
+/*Formato general de seccion películas más vistas*/
+.sectn-pop-movies {/*seccion películas más vistas*/
+	padding-bottom: 5em;
+}
+.sectn-pop-movies .col {/*columnas de las sección*/
+	background-color: #F2F2F2;
+	border-right: 2em solid #000000;
+	border-left: 2em solid #000000;
+}
+.sectn-pop-movies .img-pop-movie {/*imágenes de las películas version*/
+	width: 35%;
+	display: inline-block;
+	margin: 1.15em;
+	border: 2px solid #000000;
+	padding: 1em;
+}
+/*Formato general de la sección película individual en sí*/
+.sectn-movie {/*seccion perfil película*/	
+	background-color: #F2F2F2;
+	padding: 2em 0 5em 0;
+}
+.sectn-movie .col {/*columna del perfil película*/
+	color: #000000;
+}
+.sectn-movie .img-movie {/*imagen de la película*/
+	width: 60%;
+}
+.sectn-movie .img-profile {/*imagen del perfil del que comenta la película*/
+	background-color: #FFFFFF;
+	width: 100%;
+}
+.sectn-movie .input-group {/*div del input para comentar la película*/
+	margin-right: 0.75em;
+}
+.sectn-movie input {/*input para comentar la película*/
+	height: 3em;
+	width: 16em;
+	border: none;
+}
+.sectn-movie .btn-movie {/*botón para enviar comentario*/
+	background-color: #000000;
+	color: #FFFFFF;
+	border: none;
+	margin-bottom: 2em;
+}
+/*Formato general de la seccion pefil usuario*/
+.sectn-profile {/*seccion perfil usuario*/
+	padding: 1em 0 5em 0;
+}
+.sectn-profile .col {/*columnas de la seccion*/
+	padding: 1em;
+}
+.sectn-profile .btn-profile {/*boton para seguir como amigo*/
+	border: none;
+}
+.sectn-profile .img-profile {/*imagen del perfil*/
+	width: 50%;
+}
+.sectn-profile .img-pop-movie {/*imagenes de la lista de películas favoritas del usuario*/
+	width: 35%;
+	display: inline-block;
+	margin: 1.5em;
+	border: 2px solid #FFFFFF;
+	padding: 1em;
+}
+/*seccion amigos*/
+.sectn-contacts {/*seccion amigos completa*/
+	padding: 1.5em 0 4.5em 0;
+}
+.sectn-contacts .col-contacts {/*columna que contiene un contacto*/
+	padding: 1em;
+	border: 5px dashed #F2F2F2;
+	background-color: #000000;
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
+}
+.sectn-contacts a {/*elementos a de la seccion amigos*/
+	text-decoration: none;
+}
+.sectn-contacts .contacts h2 strong {/*titulo de seccion amigos*/
+	color: #DF0101;
+}
+.sectn-contacts a h4 {/*nombre del contacto*/
+	color: #DF0101;
+}
+.sectn-contacts .input-group {/*div del input para buscar películas*/
+	margin-right: 0.75em;
+	border-radius: 5px solid #DF0101;
+}
+.sectn-contacts .input-group input {/*input para buscar películas*/
+	height: 2.5em;
+}
+.sectn-contacts .input-group span {/*span tipo botón para buscar*/
+	background-color: #DF0101;
+	color: #FFFFFF;
+	border: none;
+}
+.sectn-contacts .btn-group> .btn:first-child {/*boton del menu*/
+	margin-left: 0.75em;
+	color: #FFFFFF;
+	background-color: #DF0101;
+}
+/*seccion agregar amigos*/
+.sectn-add-contacts {/*seccion agregar amigos completa*/
+	padding: 1.5em 0 4.5em 0;
+}
+.sectn-add-contacts .col-add-contacts {/*columna que contiene un contacto a agregar*/
+	padding: 1em;
+	border: 5px dashed #F2F2F2;
+	background-color: #000000;
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
+}
+.sectn-add-contacts .col-add {/*columna que contiene la imágen y botón*/
+	padding: 0; 
+}
+.sectn-add-contacts a {/*elementos a de la seccion agregar amigos*/
+	text-decoration: none;
+}
+.sectn-add-contacts .contacts h2 strong {/*titulo de seccion agregar amigos*/
+	color: #DF0101;
+}
+.sectn-add-contacts a h4 {/*nombre del contacto*/
+	color: #DF0101;
+}
+.sectn-add-contacts .input-group {/*div del input para buscar películas*/
+	margin-right: 0.75em;
+	border-radius: 5px solid #DF0101;
+}
+.sectn-add-contacts .input-group input {/*input para buscar películas*/
+	height: 2.5em;
+}
+.sectn-add-contacts .input-group span {/*span tipo botón para buscar*/
+	background-color: #DF0101;
+	color: #FFFFFF;
+	border: none;
+}
+.sectn-add-contacts .btn-group> .btn:first-child {/*boton del menu*/
+	margin-left: 0.75em;
+	color: #FFFFFF;
+	background-color: #DF0101;
+}
+.sectn-add-contacts .btn-profile {/*boton para seguir como amigo*/
+	border: none;
+	background-color: #DF0101;
+	color: #FFFFFF;	
+}
+
+/*Formato general del nav*/
+nav {/*nav en general*/
+	background-color: #DF0101;
+}
+nav .dropup {/*contenedor que reemplaza a la columna, de los elementos del nav*/
+	padding-top: 0.4em;
+}
+nav .btn-group> .btn:first-child {/*boton del menu*/
+	margin-left: 0.75em;
+	color: #FFFFFF;
+	background-color: #000000;
+}
+nav .input-group {/*div del input para buscar películas*/
+	margin-right: 0.75em;
+	border-radius: 5px solid #000000;
+}
+nav .input-group input {/*input para buscar películas*/
+	height: 2.5em;
+}
+nav .input-group span {/*span tipo botón para buscar*/
+	background-color: #000000;
+	color: #FFFFFF;
+	border: none;
+}
+nav ul li a {/*elementos del menú*/
+	background-color: #000000;
+}
+nav .dropdown-menu>li>a {/*elementos del menú*/
+	color: #F2F2F2;
+}

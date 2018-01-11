@@ -1,0 +1,76 @@
+@media (min-width: 1025px) and (max-width: 1600px){ /*Para visualizar en formato laptop-L*/
+	header div a .img-logo {/*imágenes del header*/
+	width: 5%
+	}
+	.sectn-pop-movies .img-pop-movie {/*imágenes de las películas version*/
+	width: 15%;
+	margin: 4.75em;
+}
+	.sectn-movie .img-movie {/*imágenes de la película individual en sí*/
+	width: 30%;
+	}
+	.sectn-movie .input-group {/*margen del input de la seccion de la película*/
+	margin-right: 7em;
+	}
+	.sectn-profile .img-profile {/*imagen del perfil*/
+	width: 30%;
+	}
+	.sectn-profile .img-pop-movie {/*imágenes de la lista personal de favoritas*/
+	width: 15%;
+	margin: 4.8em;
+	}
+	.sectn-contacts .img-contacts {/*imagenes de la lista de amigos*/
+	max-width: 45%;
+	}
+}
+@media (min-width: 771px) and (max-width: 1024px) {/*Para visualizar en formato laptop*/
+	header div a .img-logo {/*imágenes del header*/
+	width: 7%
+	}
+	.sectn-pop-movies .img-pop-movie {/*imágenes de las películas más populares*/
+	width: 15%;
+	margin: 3.25em;
+	}
+	.sectn-movie .img-movie {/*imágenes de la película individual en sí*/
+	width: 30%;
+	}
+	.sectn-movie .input-group {/*margen del input de la seccion de la película*/
+	margin-right: 7em;
+	}
+	.sectn-profile .img-profile {/*imagen del perfil*/
+	width: 30%;
+	}
+	.sectn-profile .img-pop-movie {/*imágenes de la lista personal de favoritas*/
+	width: 15%;
+	margin: 3.48em;
+	}
+	.sectn-contacts .img-contacts {/*imagenes de la lista de amigos*/
+	max-width: 45%;
+	}
+}
+@media (min-width: 426px) and (max-width: 770px) {/*Para visualizar en formato tablet*/
+   	header div a .img-logo {/*imágenes del header*/
+	width: 7%
+	}
+	.sectn-pop-movies .img-pop-movie {/*imágenes de las películas más populares*/
+	width: 15%;
+	margin: 2.25em;
+	}
+	.sectn-movie .img-movie {/*imágenes de la película individual en sí*/
+	width: 40%;
+	}
+	.sectn-profile .img-profile {/*imagen del perfil*/
+	width: 30%;
+	}
+	.sectn-profile .img-pop-movie {/*imágenes de la lista personal de favoritas*/
+	width: 15%;
+	margin: 2.5em;
+	}
+	.sectn-contacts .img-contacts {/*imagenes de la lista de amigos*/
+	max-width: 45%;
+	}
+}
+
+@media (min-width: 200px) and (max-width: 425px) {/*Para visualizar en formato mobile*/
+	
+}

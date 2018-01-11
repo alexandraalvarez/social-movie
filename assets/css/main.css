@@ -1,0 +1,39 @@
+
+/*font-family: 'Lato', sans-serif;
+font-family: 'Ropa Sans', sans-serif;
+font-family: 'Quicksand', sans-serif;
+colores: negro =  gris = #F2F2F2; rojo = #DF0101*/
+
+/* Estilos con imagen de fondo de la sección splash */
+#containerSplash{
+  background-image: url(../images/img-fondo.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: bottom;
+}
+/* Estilos del logo en la sección splash */
+.logoSocialMovie{
+  height: 14em;
+  width: 14em;
+  margin-left: 6em;
+  margin-top: 9.5em;
+}
+/* Estilos del logo en la sección init */
+#logo{
+  height: 15em;
+  width: 15em;
+  margin-left:6em;
+  margin-top: 7em;
+}
+/* Estilos del botón de inicir con Google */
+#btnsignUp{
+  margin-bottom: 1em;
+  margin-top:2em;
+  margin-left: 6em;
+  width: 13em;
+  background-color: #DF0101;;
+  border: none;
+  color: #fff;
+  outline: none;
+}

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato|Quicksand|Ropa+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/mediaStyles.css">
+	<title>
+		Social Movie
+	</title>
+</head>
+<body>
+
+  <section id="containerSplash" class="splash">
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  				<img class="logoSocialMovie" src="assets/images/logo1_conNombre.png">
+  			</div>
+  		</div>
+  	</div>
+  </section>
+
+	<!-- cambiar clase a hidden en caso de escoger efecto 2 -->
+	<section class="init"><!--ésta clase debería ser en inglés-->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12">
+					<img id="logo" src="assets/images/logo2_conNombre.png">
+				</div>
+			</div>
+				<!-- BOTON de inicio con google -->
+			<div class="row">
+				<div class="col-xs-12 ">
+					<button id="btnsignUp" class="btn btn-init btnSign-up" type="button">Ingresa con <i class="fa fa-google" aria-hidden="true"></i>oogle
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="content">
+		<header>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<a id="logo-home" href="#"><img class="img-responsive img-rounded pull-left img img-logo" alt="Responsive image" src="assets/images/logo-prueba1.png"></a>
+						<a id="logo-user" href="#"><!-- acá va la foto del usuario--></a>
+					</div><!--col-->
+				</div><!--row-->
+			</div><!--container-->
+		</header>
+		<section class="sectn-pop-movies"><!--seccion películas más vistas-->
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-red col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<h2 class="text-center">Películas más populares</h2>
+					</div>	
+					<div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<a href="#"><img class="img-responsive img-rounded img img-pop-movie" src="assets/images/logo-prueba1.png"></a>
+						<a href="#"><img class="img-responsive img-rounded img img-pop-movie" src="assets/images/logo-prueba1.png"></a>
+						<a href="#"><img class="img-responsive img-rounded img img-pop-movie" src="assets/images/logo-prueba1.png"></a>
+						<a href="#"><img class="img-responsive img-rounded img img-pop-movie" src="assets/images/logo-prueba1.png"></a>
+					</div>
+					<div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<a href="#"><img class="img-responsive img-rounded img img-pop-movie" src="assets/images/logo-prueba1.png"></a>
+						<a href="#"><img class="img-responsive img-rounded img img-pop-movie" src="assets/images/logo-prueba1.png"></a>
+						<a href="#"><img class="img-responsive img-rounded img img-pop-movie" src="assets/images/logo-prueba1.png"></a>
+						<a href="#"><img class="img-responsive img-rounded img img-pop-movie" src="assets/images/logo-prueba1.png"></a>
+					</div>				
+				</div>
+			</div>
+		</section><!--seccion películas más vistas-->
+		<section class="sectn-movie"><!--seccion película individual en sí-->
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col col-xs-12 col-sm-12 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">
+						<img class="img-responsive img-thumbnail center-block img img-movie" src="assets/images/logo-prueba1.png">
+						<h4 class="text-center"><strong>Título de la película</strong></h4>
+						<h5 class="text-center"><strong>Año</strong></h5>
+						<h5 class="text-center"><strong>Puntuación de la película: </strong> 7.9</h5>
+						<p class="text-center">Trama de la película, que es lo que más le interesa a la gente al parecer</p>
+						<button class="btn btn-default center-block btn-movie" type="submit"><strong>Agregrar a favoritas</strong></button>
+					</div>
+					<div class="col col-xs-12 col-sm-12 col-md-offset-3 col-md-8 col-lg-offset-3 col-lg-8">
+						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+							<a><img class="img-responsive img-rounded img-profile center-block">Logo</a>
+						</div>
+						<div class="col-xs-9 col-sm-9 col-md-7 col-lg-7 input-group">
+							<input type="text" class="form-control" placeholder="¿Qué opinas de la película?">
+							<span class="input-group-addon span-input-search btn-movie" type="submit"><strong>Comentar</strong></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!--seccion película individual en sí-->
+		<section class="sectn-profile"><!--seccion perfil usuario-->
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col col-xs-12 col-sm-12 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">
+						<img class="img-responsive img-rounded center-block img-profile" src="assets/images/user-logo.jpg">
+						<h4 class="text-center"><strong>Nombre Usuario</strong></h4>
+						<h5 class="text-center"><strong>Películas vistas: </strong> 8</h5>
+						<p class="text-center"><strong>Géneros favoritos: </strong> qué tipo de películas le gustan</p>
+						<button class="btn btn-default center-block btn-profile" type="submit"><strong>Agregar a mis contactos</strong></button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<h4 class="text-center"><strong>Tus películas favoritas</strong></h4>
+					</div>	
+					<div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<a href="#"><img class="img-responsive img-rounded img img-pop-movie" src="assets/images/logo-prueba1.png"></a>
+						<a href="#"><img class="img-responsive img-rounded img img-pop-movie" src="assets/images/logo-prueba1.png"></a>
+						<a href="#"><img class="img-responsive img-rounded img img-pop-movie" src="assets/images/logo-prueba1.png"></a>
+						<a href="#"><img class="img-responsive img-rounded img img-pop-movie" src="assets/images/logo-prueba1.png"></a>
+					</div>
+					<div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<a href="#"><img class="img-responsive img-rounded img img-pop-movie" src="assets/images/logo-prueba1.png"></a>
+						<a href="#"><img class="img-responsive img-rounded img img-pop-movie" src="assets/images/logo-prueba1.png"></a>
+						<a href="#"><img class="img-responsive img-rounded img img-pop-movie" src="assets/images/logo-prueba1.png"></a>
+						<a href="#"><img class="img-responsive img-rounded img img-pop-movie" src="assets/images/logo-prueba1.png"></a>
+					</div>
+				</div>
+			</div>
+		</section><!--seccion perfil usuario-->
+		<section class="sectn-contacts"><!--seccion amigos-->
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10 col-contacts">
+						<a class="contacts" href="#"><h2 class="text-center"><strong>Amigos</strong></h2></a>
+						<div class="input-group col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-9 col-lg-offset-1 col-lg-10">
+					  <input type="text" class="form-control" placeholder="Busca amigos ">
+					  <span class="input-group-addon span-input-search btn-search-friends"><i class="fa fa-search" aria-hidden="true"></i></span>
+					</div>
+					</div>
+					<div class="col-xs-offset-1 col-sm-offset-1 col-xs-10 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10 col-contacts">
+						<div class="col-xs-offset-2 col-xs-3 col-sm-offset-2 col-sm-3 col-md-offset-2 col-md-3 col-lg-offset-2 col-lg-3 ">
+							<a href="#"><img class="img-responsive img-rounded center-block img img-contacts" src="assets/images/user-logo.jpg"></a>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+							<a href="#"><h4>Nombre Apellido</h4></a>
+						</div>
+					</div>
+					<div class="col-xs-offset-1 col-sm-offset-1 col-xs-10 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10 col-contacts">
+						<div class="col-xs-offset-2 col-xs-3 col-sm-offset-2 col-sm-3 col-md-offset-2 col-md-3 col-lg-offset-2 col-lg-3 ">
+							<a href="#"><img class="img-responsive img-rounded center-block img img-contacts" src="assets/images/user-logo.jpg"></a>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+							<a href="#"><h4>Nombre Apellido</h4></a>
+						</div>
+					</div>
+					<div class="col-xs-offset-1 col-sm-offset-1 col-xs-10 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10 col-contacts">
+						<div class="col-xs-offset-2 col-xs-3 col-sm-offset-2 col-sm-3 col-md-offset-2 col-md-3 col-lg-offset-2 col-lg-3 ">
+							<a href="#"><img class="img-responsive img-rounded center-block img img-contacts" src="assets/images/user-logo.jpg"></a>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+							<a href="#"><h4>Nombre Apellido</h4></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!--seccion amigos-->
+		<section class="sectn-add-contacts"><!--seccion agregar amigos-->
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10 col-add-contacts">
+						<a class="contacts" href="#"><h2 class="text-center"><strong>Amigos</strong></h2></a>
+						<div class="input-group col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-9 col-lg-offset-1 col-lg-10">
+					  <input type="text" class="form-control" placeholder="Busca amigos">
+					  <span class="input-group-addon span-input-search btn-search-friends"><i class="fa fa-search" aria-hidden="true"></i></span>
+						</div>
+					</div>
+					<div class="col-xs-offset-1 col-sm-offset-1 col-xs-10 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10 col-add-contacts">
+						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-add">
+							<a href="#"><img class="img-responsive img-rounded center-block img img-add-contacts" src="assets/images/user-logo.jpg"></a>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+							<a href="#" class="text-center"><h4>Nombre Apellido</h4></a>
+						</div>
+						<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-add">
+							<button class="btn btn-default center-block btn-profile" type="submit"><strong><span class="hidden-xs">Agregar a</span><span class="hidden-sm hidden-md hidden-lg"><i class="fa fa-plus" aria-hidden="true"></i></span> amigos</strong></button>
+						</div>
+					</div>
+					<div class="col-xs-offset-1 col-sm-offset-1 col-xs-10 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10 col-add-contacts">
+						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-add">
+							<a href="#"><img class="img-responsive img-rounded center-block img img-add-contacts" src="assets/images/user-logo.jpg"></a>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+							<a href="#" class="text-center"><h4>Nombre Apellido</h4></a>
+						</div>
+						<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-add">
+							<button class="btn btn-default center-block btn-profile" type="submit"><strong><span class="hidden-xs">Agregar a</span><span class="hidden-sm hidden-md hidden-lg"><i class="fa fa-plus" aria-hidden="true"></i></span> amigos</strong></button>
+						</div>
+					</div>
+					<div class="col-xs-offset-1 col-sm-offset-1 col-xs-10 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10 col-add-contacts">
+						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-add">
+							<a href="#"><img class="img-responsive img-rounded center-block img img-add-contacts" src="assets/images/user-logo.jpg"></a>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+							<a href="#" class="text-center"><h4>Nombre Apellido</h4></a>
+						</div>
+						<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-add">
+							<button class="btn btn-default center-block btn-profile" type="submit"><strong><span class="hidden-xs">Agregar a</span><span class="hidden-sm hidden-md hidden-lg"><i class="fa fa-plus" aria-hidden="true"></i></span> amigos</strong></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!--seccion agregar amigos-->
+
+		<nav class="navbar navbar-fixed-bottom hidd hidd">
+		  <div class="container-fluid">
+				<div class=" navbar-header btn-group dropup">
+				  <button type="button" class="btn btn-default dropdown-toggle pull-left btn-nav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i></button>
+				    <span class="sr-only">Toggle Dropdown</span>
+				  </button>
+				  <ul class="nav dropdown-menu">
+				  	<li id="profile"><a href="#">Perfil</a></li>
+					  <li class="contacts"><a href="#">Amigos</a></li>
+					  <li id="logout"><a href="#">Salir</a></li>
+				  </ul>
+				  <div class="input-group col-xs-9 col-sm-9 col-md-3 col-lg-3 pull-right">
+					  <input type="text" id="searching" class="form-control" placeholder="Buscar película">
+					  <span id="submit-movie" class="input-group-addon span-input-search"><i class="fa fa-search" aria-hidden="true"></i></span>
+					</div>
+				</div>
+		  </div><!-- /.container-fluid -->
+		</nav>
+	</div><!--content-->
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
