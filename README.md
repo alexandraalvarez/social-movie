@@ -85,6 +85,6 @@
 - Estefanía Araos:Actualización de Readme.
 - Presentar Demo del producto(Alexandra Alvarez y Roxana Cares).
 
-   ![social-movie- inicio](docs/pantallazo1.png)
+   ![ inicio](assets/docs/pantallazo1.png)
 
 
