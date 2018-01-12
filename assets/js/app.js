@@ -9,7 +9,7 @@ $(function(){
  
  $(function(){
     setTimeout(function() {
-     $('.init').removeClass('hidden');
+     $('.init').removeClass('hidden'); //remover la clase hidden para que aparezca la sección init
    }, 2000);
  }); 
 
