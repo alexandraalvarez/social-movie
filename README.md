@@ -57,7 +57,7 @@
 - Alejandra Alvarez: termino del maquetado responsive y las secciones creadas,funcionalidad a botones y enlaces para navegar por          secciones,validación paleta de colores.
 - Roxana Cares: Inicio con google y se guardan los datos de la información de la api en firebase.
 -  Preparación de la presentación del producto.(Estefanía Araos y Katherine Ramirez)
--  (https://user-images.githubusercontent.com/30236307/34795685-ddf7143c-f631-11e7-9266-9ad2d9d35b8d.jpg(Not automatically expanded because 4 MB is too large. You can expand it anyway or open it in a new window.))
+-  (https://user-images.githubusercontent.com/30236307/34795685-ddf7143c-f631-11e7-9266-9ad2d9d35b8d.jpg
 - Exposición
 - Estefanía Araos: logo nuevo
 - Katherine Ramirez: efecto splash
