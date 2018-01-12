@@ -4,7 +4,7 @@ $(document).ready( function(){
 	firebase.auth().signOut();
 
 	 /* Efecto splash */
-	$(function(){
+  $(function(){
    setTimeout(function() {
      $('#containerSplash').fadeOut(5000);
    }, 500);
@@ -20,10 +20,7 @@ $(document).ready( function(){
 	$('.init').show(500);
 	$('.content').hide() //esconder el content*/
 
-	$('.sectn-movie').hide();//esconder sección perfil película en sí
-	$('.sectn-profile').hide();//esconder sección perfil
-  $('.sectn-contacts').hide();//esconder seccion amigos
-  $('.sectn-add-contacts').hide();//esconder seccion agregar amigos
+
 });//final funcion.ready...no tocar*/
 
 $('.profile').click( function(){
