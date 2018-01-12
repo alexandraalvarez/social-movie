@@ -1,17 +1,24 @@
+$('.content').hide() //esconder el content*/
+
 $(document).ready( function(){
 	firebase.auth().signOut();
+
 	 /* Efecto splash */
-$(function(){
+	$(function(){
    setTimeout(function() {
      $('#containerSplash').fadeOut(5000);
    }, 500);
   });
- 
- $(function(){
+
+  $(function(){
     setTimeout(function() {
      $('.init').removeClass('hidden'); //remover la clase hidden para que aparezca la sección init
    }, 2000);
- }); 
+ });
+
+	/*$('#containerSplash').hide(8000);
+	$('.init').show(500);
+	$('.content').hide() //esconder el content*/
 
 	$('.sectn-movie').hide();//esconder sección perfil película en sí
 	$('.sectn-profile').hide();//esconder sección perfil
