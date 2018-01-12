@@ -287,7 +287,6 @@ function apiCall(movie){
 			}
 			});
 		});
-
       //guardar las peliculas vistas por el usuario en firebase
       $('.btn-movie').click(function(){
         movieData.push({
