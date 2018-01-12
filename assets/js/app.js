@@ -1,9 +1,17 @@
 $(document).ready( function(){
 	firebase.auth().signOut();
-	//efecto splash
-	$('#containerSplash').hide(8000);
-	$('.init').show(500);
-	$('.content').hide() //esconder el content
+	 /* Efecto splash */
+$(function(){
+   setTimeout(function() {
+     $('#containerSplash').fadeOut(5000);
+   }, 500);
+  });
+ 
+ $(function(){
+    setTimeout(function() {
+     $('.init').removeClass('hidden');
+   }, 2000);
+ }); 
 
 	$('.sectn-movie').hide();//esconder sección perfil película en sí
 	$('.sectn-profile').hide();//esconder sección perfil
