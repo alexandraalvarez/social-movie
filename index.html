@@ -43,8 +43,35 @@
 			</div>
 		</div>
 	</section>
+
 	<div class="content">
-		<header>
+		<header class="headr-web hidden-xs">
+			<nav class="navbar navbar-fixed-top">
+			  <div class="container-fluid">
+			    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class=" navbar-header btn-group dropdown">
+						  <button type="button" class="btn btn-default dropdown-toggle pull-left btn-nav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></button>
+						    <span class="sr-only">Toggle Dropdown</span>
+						  </button>
+						  <ul class="nav dropdown-menu">
+						  	<li id="profile"><a href="#">Perfil</a></li>
+							  <li class="contacts"><a href="#">Amigos</a></li>
+							  <li id="logout"><a href="#">Salir</a></li>
+						  </ul>
+						</div>
+						<a id="logo-home" href="#"><img class="img-responsive img-rounded pull-left img img-logo" alt="Responsive image" src="assets/images/logo1.png"></a>
+						<div class="input-group col-xs-9 col-sm-9 col-md-3 col-lg-3 pull-left">
+							<input type="text" id="searching" class="form-control" placeholder="Buscar película">
+							<span id="submit-movie" class="input-group-addon span-input-search"><i class="fa fa-search" aria-hidden="true"></i></span>
+						</div>
+						<a id="logo-user" href="#"><img class="img-responsive img-rounded pull-right img img-logo" src="assets/images/user-logo.jpg"></a>
+						<a href="#"><img class="contacts img-responsive img-rounded pull-right img img-logo" src="assets/images/logo2.png"></a>
+					</div><!--col-->
+		    </div>  	
+			</nav>    
+		</header>
+	
+		<header class="hidden-sm hidden-md hidden-lg">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -191,7 +218,7 @@
 							<a href="#" class="text-center"><h4>Nombre Apellido</h4></a>
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-add">
-							<button class="btn btn-default center-block btn-profile" type="submit"><strong><span class="hidden-xs">Agregar a</span><span class="hidden-sm hidden-md hidden-lg"><i class="fa fa-plus" aria-hidden="true"></i></span> amigos</strong></button>
+							<button class="btn btn-default center-block btn-profile" type="submit"><strong><span class="hidden-xs">Agregar a mis</span><span class="hidden-sm hidden-md hidden-lg"><i class="fa fa-plus" aria-hidden="true"></i></span> amigos</strong></button>
 						</div>
 					</div>
 					<div class="col-xs-offset-1 col-sm-offset-1 col-xs-10 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10 col-add-contacts">
@@ -202,7 +229,7 @@
 							<a href="#" class="text-center"><h4>Nombre Apellido</h4></a>
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-add">
-							<button class="btn btn-default center-block btn-profile" type="submit"><strong><span class="hidden-xs">Agregar a</span><span class="hidden-sm hidden-md hidden-lg"><i class="fa fa-plus" aria-hidden="true"></i></span> amigos</strong></button>
+							<button class="btn btn-default center-block btn-profile" type="submit"><strong><span class="hidden-xs">Agregar a mis</span><span class="hidden-sm hidden-md hidden-lg"><i class="fa fa-plus" aria-hidden="true"></i></span> amigos</strong></button>
 						</div>
 					</div>
 					<div class="col-xs-offset-1 col-sm-offset-1 col-xs-10 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10 col-add-contacts">
@@ -213,14 +240,14 @@
 							<a href="#" class="text-center"><h4>Nombre Apellido</h4></a>
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-add">
-							<button class="btn btn-default center-block btn-profile" type="submit"><strong><span class="hidden-xs">Agregar a</span><span class="hidden-sm hidden-md hidden-lg"><i class="fa fa-plus" aria-hidden="true"></i></span> amigos</strong></button>
+							<button class="btn btn-default center-block btn-profile" type="submit"><strong><span class="hidden-xs">Agregar a mis</span><span class="hidden-sm hidden-md hidden-lg"><i class="fa fa-plus" aria-hidden="true"></i></span> amigos</strong></button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section><!--seccion agregar amigos-->
 
-		<nav class="navbar navbar-fixed-bottom hidd hidd">
+		<nav class="navbar navbar-fixed-bottom hidden-sm hidden-md hidden-lg">
 		  <div class="container-fluid">
 				<div class=" navbar-header btn-group dropup">
 				  <button type="button" class="btn btn-default dropdown-toggle pull-left btn-nav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i></button>

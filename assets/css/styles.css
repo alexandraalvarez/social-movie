@@ -12,6 +12,35 @@ body {
 body .img { /*para todas las imágenes*/
 	background-color: #FFFFFF;
 }
+/*Formato general del header-nav web*/
+.headr-web .img-logo {
+	width: 5%;
+}
+.headr-web .btn-group> .btn:first-child {/*boton del menu*/
+	padding: 0.5em;
+	margin: 1em;
+	color: #FFFFFF;
+	background-color: #000000;
+}
+.headr-web .input-group {/*div del input para buscar películas*/
+	margin-top: 1em;
+	margin-right: 0.75em;
+	border-radius: 5px solid #000000;
+}
+.headr-web .input-group input {/*input para buscar películas*/
+	height: 3.5em;
+}
+.headr-web .input-group span {/*span tipo botón para buscar*/
+	background-color: #000000;
+	color: #FFFFFF;
+	border: none;
+}
+.headr-web ul li a {/*elementos del menú*/
+	background-color: #000000;
+}
+.headr-web .dropdown-menu>li>a {/*elementos del menú*/
+	color: #F2F2F2;
+}
 /*Formato general del header*/
 header { /*color del header*/
 	background-color: #DF0101;

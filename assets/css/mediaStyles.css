@@ -1,4 +1,7 @@
 @media (min-width: 1025px) and (max-width: 1600px){ /*Para visualizar en formato laptop-L*/
+	.headr-web .img-logo {
+	width: 4%;
+	}
 	header div a .img-logo {/*imágenes del header*/
 	width: 5%
 	}
