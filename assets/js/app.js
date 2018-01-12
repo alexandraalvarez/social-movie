@@ -27,7 +27,7 @@ $('#logo-home').click( function(){
   $('.sectn-add-contacts').hide();
 });//final función.click logo-home header ...no tocar
 
-$('#logo-user').click( function(){
+$('.logo-user').click( function(){
 	$('.sectn-profile').show();
 	$('.sectn-pop-movies').hide();
 	$('.sectn-movie').hide();
@@ -76,9 +76,9 @@ firebase.initializeApp(config);
 var token = 'none';
 var user = 'none';
 var email = 'none';
+//guardar los usuarios que se registren
+var userData = firebase.database().ref('users');
 function GoogleSignUp(){
-	console.log('holaaa')
-
   if (!firebase.auth().currentUser){  //para saber si el usuario se ha conectado
     var provider = new firebase.auth.GoogleAuthProvider();
     provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
@@ -88,11 +88,24 @@ function GoogleSignUp(){
 			email = user.email;
       $('.init').hide() && $('.content').show();
 			//agregar la imagen de perfil del usuario al header
-			$('#logo-user').append(
+			$('.logo-user').append(
 				'<img class="img-responsive img-rounded pull-right img img-logo" alt="Responsive image" src="'+ user.photoURL +'">'
 			)
-      //sacar el nombre de usuario
+      //guardar el nombre de usuario en firebase
 			console.log(email);
+			userData.orderByChild("email").equalTo(user.email).on("value", function(snapshot){
+				console.log(snapshot.val());
+					if(snapshot.val()===null){
+						console.log("Nuevo Usuario");
+						userData.push({
+							photo: user.photoURL,
+							name: user.displayName,
+							email: user.email
+						});
+					}else{
+						console.log("Usuario Existente");
+					}
+			});
       //console.log(user.displayName);
       //sacar la foto de usuario
       //console.log(user.photoURL);
@@ -156,40 +169,38 @@ $('#btnsignUp').click(function(){
 						objetoTrue = Objeto;
 					}
 					});
-
-					console.log(onlyOne);
-				if(onlyOne === true){
-					$('.sectn-movie').append(
-						'<div class="container-fluid">' +
-						'<div class="row">' +
-						'<div class="col col-xs-12 col-sm-12 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">' +
-						'<img class="img-responsive img-thumbnail center-block img img-movie" src=' + objetoTrue.posterMovie + '>' +
-						'<h4 class="text-center">' +  objetoTrue.title +'</h4>' +
-						'<h5 class="text-center"><strong>' +  objetoTrue.year + '</strong></h5>' +
-						'<h5 class="text-center"><strong>Puntuación de la película: </strong>' +  objetoTrue.ratingImdb + '</h5>' +
-						'<p class="text-center">' +  objetoTrue.plot + '</p>' +
-						'</div>' +
-						'</div>' +
-						'</div>'
-						)
-				} else{
-					movieData.orderByChild("idImdb").equalTo(imgVal).once("value", function(snapshot){
-						snapshot.forEach(function(e){
-						objetoTrue = e.val();
-						})
-					$('.sectn-movie').append(
-						'<div class="container-fluid">' +
-						'<div class="row">' +
-						'<div class="col col-xs-12 col-sm-12 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">' +
-						'<img class="img-responsive img-thumbnail center-block img img-movie" src=' + objetoTrue.posterMovie + '>' +
-						'<h4 class="text-center">' +  objetoTrue.title +'</h4>' +
-						'<h5 class="text-center"><strong>' +  objetoTrue.year + '</strong></h5>' +
-						'<h5 class="text-center"><strong>Puntuación de la película: </strong>' +  objetoTrue.ratingImdb + '</h5>' +
-						'<p class="text-center">' +  objetoTrue.plot + '</p>' +
-						'<button class="btn btn-default center-block btn-movie" type="submit"><strong>Agregrar a favoritas</strong></button>' +
-						'</div>' +
-						'</div>' +
-						'</div>'
+					if(onlyOne === true){
+						$('.sectn-movie').append(
+							'<div class="container-fluid">' +
+							'<div class="row">' +
+							'<div class="col col-xs-12 col-sm-12 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">' +
+							'<img class="img-responsive img-thumbnail center-block img img-movie" src=' + objetoTrue.posterMovie + '>' +
+							'<h4 class="text-center">' +  objetoTrue.title +'</h4>' +
+							'<h5 class="text-center"><strong>' +  objetoTrue.year + '</strong></h5>' +
+							'<h5 class="text-center"><strong>Puntuación de la película: </strong>' +  objetoTrue.ratingImdb + '</h5>' +
+							'<p class="text-center">' +  objetoTrue.plot + '</p>' +
+							'</div>' +
+							'</div>' +
+							'</div>'
+							)
+					} else{
+						movieData.orderByChild("idImdb").equalTo(imgVal).once("value", function(snapshot){
+							snapshot.forEach(function(e){
+							objetoTrue = e.val();
+							})
+						$('.sectn-movie').append(
+							'<div class="container-fluid">' +
+							'<div class="row">' +
+							'<div class="col col-xs-12 col-sm-12 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">' +
+							'<img class="img-responsive img-thumbnail center-block img img-movie" src=' + objetoTrue.posterMovie + '>' +
+							'<h4 class="text-center">' +  objetoTrue.title +'</h4>' +
+							'<h5 class="text-center"><strong>' +  objetoTrue.year + '</strong></h5>' +
+							'<h5 class="text-center"><strong>Puntuación de la película: </strong>' +  objetoTrue.ratingImdb + '</h5>' +
+							'<p class="text-center">' +  objetoTrue.plot + '</p>' +
+							'<button class="btn btn-default center-block btn-movie" type="submit"><strong>Agregrar a favoritas</strong></button>' +
+							'</div>' +
+							'</div>' +
+							'</div>'
 						)
 						//guardar las peliculas vistas por el usuario en firebase
 						$('.btn-movie').click(function(){
@@ -205,9 +216,9 @@ $('#btnsignUp').click(function(){
 								idImdb: imgVal
 							})
 						});
-						})
+					})
 				}
-});
+			});
 			});
 		})
   })
@@ -281,16 +292,27 @@ function apiCall(movie){
 //hago click en el buscador de peliculas
   $('#submit-movie').click(function(){
     var movieSearch = $('#searching').val();
+		console.log(movieSearch);
     apiCall(movieSearch);
 		$('.sectn-movie').show();
 		$('.sectn-pop-movies').hide();
 		$('.sectn-profile').hide();
     //console.log(apiCall(movieSearch));
   });
+	//hago click en el buscador de peliculas
+	  $('#search2').click(function(){
+	    var movieSearch = $('#searching2').val();
+			console.log(movieSearch);
+	    apiCall(movieSearch);
+			$('.sectn-movie').show();
+			$('.sectn-pop-movies').hide();
+			$('.sectn-profile').hide();
+	    //console.log(apiCall(movieSearch));
+	  });
 
 
 //construir el perfil de usuario
-$('#logo-user').click(function(){
+$('.logo-user').click(function(){
 	$('.sectn-profile').html(''); //limpiamos el contenedor
 	$('.sectn-profile').append(
 		'<div class="container-fluid">' +
@@ -358,20 +380,35 @@ $('#logo-user').click(function(){
 	});
 })
 })
-//añadir Amigos
-//obtener usuarios que accedieron
-/*var user = firebase.auth().currentUser;
-if (user != null) {
-  user.providerData.forEach(function (profile) {
-    console.log("Sign-in provider: "+profile.providerId);
-    console.log("  Provider-specific UID: "+profile.uid);
-    console.log("  Name: "+profile.displayName);
-    console.log("  Email: "+profile.email);
-    console.log("  Photo URL: "+profile.photoURL);
-  });
-}*/
-
-
-$('.btn-profile').click(function(){
-
-});
+//buscar Amigos
+/*  $('#search-friends').click(function(){
+		$('#search-friends').html('');
+    var friendSearch = $('#friends').val();
+		//console.log(friendSearch);
+		userData.orderByChild("name").equalTo(friendSearch).on("value", function(snapshot){
+			snapshot.forEach(function(e){
+				Objeto = e.val();
+				$('.section-friend').append(
+					'<div class="row">' +
+					'<div class="col-xs-offset-1 col-sm-offset-1 col-xs-10 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10 col-add-contacts">' +
+					'<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-add">' +
+					'<a href="#"><img class="img-responsive img-rounded center-block img img-add-contacts" src="'+ Objeto.photo +'"></a>' +
+					'</div>' +
+					'<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">' +
+					'<a href="#" class="text-center"><h4>'+ Objeto.name +'</h4></a>' +
+					'</div>' +
+					'<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-add">' +
+					'<button class="btn btn-default center-block btn-profile" type="submit"><strong><span class="hidden-xs">Agregar a mis</span><span class="hidden-sm hidden-md hidden-lg"><i class="fa fa-plus" aria-hidden="true"></i></span> amigos</strong></button>' +
+					'</div>' +
+					'</div>' +
+					'</div>'
+				)
+			});
+    });
+  }); */
+//salir de la sesión
+$('.logout').click(function(){
+	firebase.auth().signOut();
+	$('.init').show();
+	$('.content').hide();
+})
