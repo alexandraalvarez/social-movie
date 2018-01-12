@@ -11,7 +11,7 @@ $(document).ready( function(){
   $('.sectn-add-contacts').hide();//esconder seccion agregar amigos
 });//final funcion.ready...no tocar*/
 
-$('#profile').click( function(){
+$('.profile').click( function(){
 	$('.sectn-profile').show();
 	$('.sectn-pop-movies').hide();
 	$('.sectn-movie').hide();
@@ -19,7 +19,7 @@ $('#profile').click( function(){
   $('.sectn-add-contacts').hide();
 });//final función.click menu perfil nav...no tocar
 
-$('#logo-home').click( function(){
+$('.logo-home-headr').click( function(){
 	$('.sectn-pop-movies').show();
 	$('.sectn-profile').hide();
 	$('.sectn-movie').hide();
