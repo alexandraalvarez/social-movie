@@ -94,6 +94,27 @@ header div a .img-logo {/*imagenes del header*/
 	border: none;
 	margin-bottom: 2em;
 }
+.sectn-movie .col-info-comment, .col-comment {/*columnas para los comentarios de los usuarios*/
+	padding: 0.5em 1.5em;
+	background-color: #FFFFFF;
+	color: #000000;
+}
+.sectn-movie .col-info-comment {/*columna de la foto de perfil, fecha y hora del comentario*/
+	margin-top: 1em;
+	border-bottom: 2px dashed #F2F2F2;
+}
+.sectn-movie .col-info-comment .img-logo {/*logo usuario que comenta*/
+	width: 10%;
+	display: inline-block;
+	margin-right: 1em;
+}
+.sectn-movie .col-info-comment a {
+	color: #000000;
+	text-decoration: none;
+}
+.sectn-movie .col-comment p {/*comentario*/
+	margin: 0;
+}
 /*Formato general de la seccion pefil usuario*/
 .sectn-profile {/*seccion perfil usuario*/
 	padding: 1em 0 5em 0;

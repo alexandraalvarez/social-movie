@@ -1,54 +1,75 @@
 @media (min-width: 1025px) and (max-width: 1600px){ /*Para visualizar en formato laptop-L*/
 	.headr-web .img-logo {
-	width: 4%;
+		width: 4%;
 	}
 	header div a .img-logo {/*imágenes del header*/
-	width: 5%
+		width: 5%
+	}
+	.sectn-pop-movies {/*seccion películas más vistas*/
+		padding-top: 3em;
 	}
 	.sectn-pop-movies .img-pop-movie {/*imágenes de las películas version*/
-	width: 15%;
-	margin: 4.1em;
-}
+		width: 15%;
+		margin: 4.1em;
+	}
+	.sectn-movie {/*seccion perfil película*/	
+		padding: 5em;
+	}
 	.sectn-movie .img-movie {/*imágenes de la película individual en sí*/
-	width: 30%;
+		width: 30%;
 	}
 	.sectn-movie .input-group {/*margen del input de la seccion de la película*/
-	margin-right: 7em;
+		margin-right: 7em;
+	}
+	.sectn-movie .col-info-comment .img-logo {/*logo usuario que comenta*/
+		width: 5%;
+	}
+	.sectn-profile {/*seccion perfil usuario*/
+		padding: 4em;
 	}
 	.sectn-profile .img-profile {/*imagen del perfil*/
-	width: 30%;
+		width: 30%;
 	}
 	.sectn-profile .img-pop-movie {/*imágenes de la lista personal de favoritas*/
-	width: 15%;
-	margin: 4.3em;
+		width: 15%;
+		margin: 4.3em;
+	}
+	.sectn-contacts {/*seccion amigos completa*/
+		padding: 4.5em;
 	}
 	.sectn-contacts .img-contacts {/*imagenes de la lista de amigos*/
-	max-width: 45%;
+		max-width: 45%;
+	}
+	.sectn-add-contacts {/*seccion agregar amigos completa*/
+		padding: 4.5em;
 	}
 }
 @media (min-width: 771px) and (max-width: 1024px) {/*Para visualizar en formato laptop*/
 	header div a .img-logo {/*imágenes del header*/
-	width: 7%
+		width: 7%
 	}
 	.sectn-pop-movies .img-pop-movie {/*imágenes de las películas más populares*/
-	width: 15%;
-	margin: 3.25em;
+		width: 15%;
+		margin: 3.25em;
 	}
 	.sectn-movie .img-movie {/*imágenes de la película individual en sí*/
-	width: 30%;
+		width: 30%;
 	}
 	.sectn-movie .input-group {/*margen del input de la seccion de la película*/
-	margin-right: 7em;
+		margin-right: 7em;
+	}
+	.sectn-movie .col-info-comment .img-logo {/*logo usuario que comenta*/
+		width: 5%;
 	}
 	.sectn-profile .img-profile {/*imagen del perfil*/
-	width: 30%;
+		width: 30%;
 	}
 	.sectn-profile .img-pop-movie {/*imágenes de la lista personal de favoritas*/
-	width: 15%;
-	margin: 3.48em;
+		width: 15%;
+		margin: 3.48em;
 	}
 	.sectn-contacts .img-contacts {/*imagenes de la lista de amigos*/
-	max-width: 45%;
+		max-width: 45%;
 	}
 }
 @media (min-width: 426px) and (max-width: 770px) {/*Para visualizar en formato tablet*/
@@ -61,6 +82,9 @@
 	}
 	.sectn-movie .img-movie {/*imágenes de la película individual en sí*/
 	width: 40%;
+	}
+	.sectn-movie .col-info-comment .img-logo {/*logo usuario que comenta*/
+		width: 6%;
 	}
 	.sectn-profile .img-profile {/*imagen del perfil*/
 	width: 30%;
