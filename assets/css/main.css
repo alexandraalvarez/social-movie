@@ -16,8 +16,7 @@ colores: negro =  gris = #F2F2F2; rojo = #DF0101*/
 .logoSocialMovie{
   height: 14em;
   width: 14em;
-  margin-left: 6em;
-  margin-top: 9.5em;
+  margin-top: 30%;
 }
 /* Estilos del logo en la sección init */
 #logo{
@@ -29,11 +28,131 @@ colores: negro =  gris = #F2F2F2; rojo = #DF0101*/
 /* Estilos del botón de inicir con Google */
 #btnsignUp{
   margin-bottom: 1em;
-  margin-top:2em;
-  margin-left: 6em;
+  /*margin-top:2em;
+  margin-left: 6em;*/
   width: 13em;
   background-color: #DF0101;;
   border: none;
   color: #fff;
   outline: none;
 }
+/* Estilos del logo en la sección init */
+#logo{
+  height: 15em;
+  width: 15em;
+  margin-left:6em;
+  margin-top: 7em;
+}
+/*estilos de la seccion start*/
+.section-start{
+  background-color: white;
+}
+.firstCol{
+  height: 100vh;
+}
+.secondCol{
+  background-color: black;
+  height: 100vh;
+}
+.name-movie{
+  margin-top: 3em;
+  margin-left: 1.3em;
+  margin-bottom: 0;
+  color:#DF0101;
+}
+.page{
+   margin-top: 3em;
+  margin-left: 1.2em;
+  margin-bottom: 0;
+  color: black;
+}
+.explore{
+  margin-left: 2em;
+  margin-top:0.2em;
+  font-size: 17px;
+  color: black;
+}
+.operate{
+  margin-top: 1em;
+  margin-left: 2em;
+  margin-bottom: 1em;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+}
+.users{
+  margin-left: 2em;
+  color:#DF0101;
+}
+.users::after {
+  content: "Agrega a tus amigos";
+  color: white;
+  font-family: 'Ropa Sans', sans-serif;
+  margin-left: 1em;
+  font-size: 17px;
+  font-weight: bold;
+  color:black;
+}
+.affinity{
+ margin-left: 2em;
+ margin-top: 0.2em;
+ margin-bottom: 2em;
+ font-size: 15px;
+ color: black;
+}
+.film{
+ margin-left: 2em;
+ color:#DF0101;
+}
+.film::after {
+  content: "Incorpora a tu perfil";
+  color: white;
+  font-family: 'Ropa Sans', sans-serif;
+  margin-left: 1em;
+  font-size: 17px;
+  font-weight: bold;
+  color:black;
+}
+.watched{
+ margin-left: 2em;
+ margin-top: 0.2em;
+ margin-bottom: 2em;
+ font-size: 15px;
+ color: black;
+}
+.comment{
+  margin-left: 2em;
+  color:#DF0101;
+}
+.comment::after {
+  content: "Comenta";
+  color: white;
+  font-family: 'Ropa Sans', sans-serif;
+  margin-left: 1em;
+  font-size: 17px;
+  font-weight: bold;
+  color:black;
+}
+.share{
+ margin-left: 2em;
+ margin-top: 0.2em;
+ margin-bottom: 4em;
+ color: black;
+ font-size: 15px;
+
+}
+#logo-prueba{
+ height:13em;
+ width: 13em;
+ margin-top: 30%;
+}
+/* Estilos del botón de inicir con Google */
+#btnsignUp{
+  width: 13em;
+  background-color: #DF0101;;
+  border: none;
+  color: #fff;
+  outline: none;
+  margin-bottom: 10em;
+}
+© 2018 GitHub, Inc.

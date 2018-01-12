@@ -43,6 +43,9 @@
 	.sectn-add-contacts {/*seccion agregar amigos completa*/
 		padding-top: 9em;
 	}
+	.logoSocialMovie{
+	  margin-top: 10%;
+	}
 }
 @media (min-width: 771px) and (max-width: 1024px) {/*Para visualizar en formato laptop*/
 	header div a .img-logo {/*imágenes del header*/
@@ -86,6 +89,15 @@
 	.sectn-add-contacts {/*seccion agregar amigos completa*/
 		padding-top: 9em;
 	}
+	.logoSocialMovie{
+	  margin-top: 15%;
+	}
+	.firstCol{
+	  height: 100vh;
+	}
+	.secondCol{
+	  height: 100vh;
+	}
 }
 @media (min-width: 426px) and (max-width: 770px) {/*Para visualizar en formato tablet*/
    	header div a .img-logo {/*imágenes del header*/
@@ -110,6 +122,12 @@
 	}
 	.sectn-contacts .img-contacts {/*imagenes de la lista de amigos*/
 	max-width: 45%;
+	}
+	.logoSocialMovie {
+	  margin-top: 20%;
+	}
+	#logo-prueba{
+	 margin-top: 15%;
 	}
 }
 
