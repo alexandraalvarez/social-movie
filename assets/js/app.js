@@ -114,20 +114,27 @@ function GoogleSignUp(){
 $('#btnsignUp').click(function(){
 	$('.movies-pop').html('');
 	movieData.once('value', function(snapshot){
+		var repit = false;
+		var array = [];
     snapshot.forEach(function(e){
     var Objeto = e.val();
     console.log(Objeto);
 		var imbdRating = parseInt(Objeto.ratingImdb);
 		//console.log(imbdRating);
-    if(imbdRating > 7){
-			console.log(imbdRating);
-			console.log(Objeto.title);
+		for (var i = 0; i< array.length; i++){
+			if (array[i] === Objeto.idImdb){
+				repit = true;
+			}
+		}
+    if(imbdRating >= 7 && repit ===false){
 					$('.movies-pop').append(
 						'<div class="col col-xs-6 col-sm-6 col-md-3 col-lg-3">' +
 						'<a href="#"><img class="img-responsive img-rounded pull-left img img-home-movie" name="'+ Objeto.idImdb +'" src="'+ Objeto.posterMovie +'"></a>' +
 						'</div>'
 					)
 				}
+			array.push(Objeto.idImdb);
+			});
 			$('.img-home-movie').click(function(){
 				var imgVal = $(this).attr('name');
 				//console.log(imgVal);
@@ -141,12 +148,16 @@ $('#btnsignUp').click(function(){
 				movieData.orderByChild("userID").equalTo(user.email).on("value", function(snapshot){
 					snapshot.forEach(function(e){
 					var Objeto = e.val();
+					console.log(Objeto.idImdb);
+					console.log(imgVal);
 					if(Objeto.idImdb === imgVal){
+						console.log("es trurr");
 						onlyOne = true;
 						objetoTrue = Objeto;
 					}
 					});
-				});
+
+					console.log(onlyOne);
 				if(onlyOne === true){
 					$('.sectn-movie').append(
 						'<div class="container-fluid">' +
@@ -162,7 +173,7 @@ $('#btnsignUp').click(function(){
 						'</div>'
 						)
 				} else{
-					movieData.orderByChild("idImdb").equalTo(imgVal).on("value", function(snapshot){
+					movieData.orderByChild("idImdb").equalTo(imgVal).once("value", function(snapshot){
 						snapshot.forEach(function(e){
 						objetoTrue = e.val();
 						})
@@ -180,25 +191,24 @@ $('#btnsignUp').click(function(){
 						'</div>' +
 						'</div>'
 						)
-
+						//guardar las peliculas vistas por el usuario en firebase
+						$('.btn-movie').click(function(){
+							movieData.push({
+								title:objetoTrue.title,
+								year:  objetoTrue.year,
+								plot: objetoTrue.plot,
+								posterMovie:objetoTrue.posterMovie,
+								ratingImdb:objetoTrue.ratingImdb,
+								userID:user.email,
+								//user:user.displayName,
+								//profile:user.photoURL,
+								idImdb: imgVal
+							})
+						});
 						})
 				}
-				//guardar las peliculas vistas por el usuario en firebase
-				$('.btn-movie').click(function(){
-					movieData.push({
-						title:objetoTrue.title,
-						year:  objetoTrue.year,
-						plot: objetoTrue.plot,
-						posterMovie:objetoTrue.posterMovie,
-						ratingImdb:objetoTrue.ratingImdb,
-						userID:user.email,
-						//user:user.displayName,
-						//profile:user.photoURL,
-						idImdb: imgVal
-					})
-				});
+});
 			});
-			})
 		})
   })
 //guardar en una variable la data de firebase
@@ -324,25 +334,26 @@ $('#logo-user').click(function(){
 		$('.sectn-profile').hide();
 		$('.sectn-movie').html(''); //limpiamos el contenedor
 		//dentro de acá debo sacar todos los objetos
+		var Objeto;
 		movieData.orderByChild("idImdb").equalTo(imgVal).on("value", function(snapshot){
 			snapshot.forEach(function(e){
-				var Objeto = e.val();
-				if(Objeto!=null){
-					$('.sectn-movie').append(
-						'<div class="container-fluid">' +
-						'<div class="row">' +
-						'<div class="col col-xs-12 col-sm-12 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">' +
-						'<img class="img-responsive img-thumbnail center-block img img-movie" src=' + Objeto.posterMovie + '>' +
-						'<h4 class="text-center">' +  Objeto.title +'</h4>' +
-						'<h5 class="text-center"><strong>' +  Objeto.year + '</strong></h5>' +
-						'<h5 class="text-center"><strong>Puntuación de la película: </strong>' +  Objeto.ratingImdb + '</h5>' +
-						'<p class="text-center">' +  Objeto.plot + '</p>' +
-						'</div>' +
-						'</div>' +
-						'</div>'
-						)
-				}
+				Objeto = e.val();
 			});
+			if(Objeto!=null){
+				$('.sectn-movie').append(
+					'<div class="container-fluid">' +
+					'<div class="row">' +
+					'<div class="col col-xs-12 col-sm-12 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">' +
+					'<img class="img-responsive img-thumbnail center-block img img-movie" src=' + Objeto.posterMovie + '>' +
+					'<h4 class="text-center">' +  Objeto.title +'</h4>' +
+					'<h5 class="text-center"><strong>' +  Objeto.year + '</strong></h5>' +
+					'<h5 class="text-center"><strong>Puntuación de la película: </strong>' +  Objeto.ratingImdb + '</h5>' +
+					'<p class="text-center">' +  Objeto.plot + '</p>' +
+					'</div>' +
+					'</div>' +
+					'</div>'
+					)
+			}
 		});
 	});
 })
