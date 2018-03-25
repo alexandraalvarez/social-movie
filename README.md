@@ -58,7 +58,7 @@
 - Roxana Cares: Inicio con google y se guardan los datos de la información de la api en firebase.
 Perfil de usuario, que se cree a través del js con las películas que ha marcado como vistas.
 -  Preparación de la presentación del producto.(Estefanía Araos y Katherine Ramirez)
--  (https://user-images.githubusercontent.com/30236307/34795685-ddf7143c-f631-11e7-9266-9ad2d9d35b8d.jpg(Not automatically expanded because 4 MB is too large. You can expand it anyway or open it in a new window.))
+-  https://user-images.githubusercontent.com/30236307/34795685-ddf7143c-f631-11e7-9266-9ad2d9d35b8d.jpg
 - Exposición
 - Estefanía Araos: logo nuevo
 - Katherine Ramirez: efecto splash
@@ -68,9 +68,10 @@ Perfil de usuario, que se cree a través del js con las películas que ha marcad
 ## Planificación 11/01:
 + Daily
 
-- Alexandra Alvarez: maquetado sección amigos, botones de búsqueda, cambio en sección películas, perfil y con su respectiva                funcionalidad de navegación.
-- Roxana Cares: Mostrar películas más populares en el inicio, ajustar detalles de visualización.
-Intento por hacer el buscasdor de amigos, pero quedó incompleto.
+
+- Alexandra Alvarez: maquetado sección amigos, botones de búsqueda, cambio en sección películas, perfil y con su respectiva     funcionalidad de navegación.
+- Roxana Cares: búsqueda de películas, agregar a favoritos,perfil de usuario.
+
 - Kaherine Ramirez: arreglo de splash.
 - Estefanía Araos: maquetado sección start .
 
@@ -87,6 +88,8 @@ Intento por hacer el buscasdor de amigos, pero quedó incompleto.
 - Estefanía Araos:Actualización de Readme.
 - Presentar Demo del producto(Alexandra Alvarez y Roxana Cares).
 
+
 ![social-movie](assets/docs/pantallazo1.png)
+
 
 

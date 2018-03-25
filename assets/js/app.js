@@ -6,13 +6,15 @@ $(document).ready( function(){
 	 /* Efecto splash */
   $(function(){
    setTimeout(function() {
-     $('#containerSplash').fadeOut(5000);
+   	$('.section-celular').hide();
+    $('#containerSplash').fadeOut(5000);
    }, 500);
   });
 
   $(function(){
     setTimeout(function() {
-     $('.init').removeClass('hidden'); //remover la clase hidden para que aparezca la sección init
+    $('.section-celular').show();
+    $('.init').removeClass('hidden'); //remover la clase hidden para que aparezca la sección init
    }, 2000);
  });
 
