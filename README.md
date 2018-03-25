@@ -56,6 +56,7 @@
 
 - Alejandra Alvarez: termino del maquetado responsive y las secciones creadas,funcionalidad a botones y enlaces para navegar por          secciones,validación paleta de colores.
 - Roxana Cares: Inicio con google y se guardan los datos de la información de la api en firebase.
+Perfil de usuario, que se cree a través del js con las películas que ha marcado como vistas.
 -  Preparación de la presentación del producto.(Estefanía Araos y Katherine Ramirez)
 -  (https://user-images.githubusercontent.com/30236307/34795685-ddf7143c-f631-11e7-9266-9ad2d9d35b8d.jpg(Not automatically expanded because 4 MB is too large. You can expand it anyway or open it in a new window.))
 - Exposición
@@ -68,7 +69,8 @@
 + Daily
 
 - Alexandra Alvarez: maquetado sección amigos, botones de búsqueda, cambio en sección películas, perfil y con su respectiva                funcionalidad de navegación.
-- Roxana Cares: búsqueda de películas, agregar a favoritos,perfil de usuario.
+- Roxana Cares: Mostrar películas más populares en el inicio, ajustar detalles de visualización.
+Intento por hacer el buscasdor de amigos, pero quedó incompleto.
 - Kaherine Ramirez: arreglo de splash.
 - Estefanía Araos: maquetado sección start .
 
@@ -81,10 +83,10 @@
 
 - Alexandra Alvarez: maquetado en sección películas y correción de errores.
 - Roxana Cares: 
-- Katherine Ramirez:ayudando readme.
+- Katherine Ramirez:ayudando a actualizar el readme, cambiar fotos y nombres en la sección de amigos.
 - Estefanía Araos:Actualización de Readme.
 - Presentar Demo del producto(Alexandra Alvarez y Roxana Cares).
 
-![social-movie](docs/pantallazo1.png)
+![social-movie](assets/docs/pantallazo1.png)
 
 
